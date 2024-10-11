@@ -1,0 +1,1110 @@
+2024-10-11 15:49:33 [restartedMain] INFO  c.e.n.NotificationserviceApplication - Starting NotificationserviceApplication using Java 17.0.11 with PID 833190 (/home/kacha/Project/notificationservice/target/classes started by kacha in /home/kacha/Project/notificationservice)
+2024-10-11 15:49:33 [restartedMain] INFO  c.e.n.NotificationserviceApplication - No active profile set, falling back to 1 default profile: "default"
+2024-10-11 15:49:33 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-11 15:49:33 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 3 ms. Found 1 JPA repository interface.
+2024-10-11 15:49:33 [restartedMain] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=5ae48775-a4a9-3b10-b5e7-5d6492251d87
+2024-10-11 15:49:33 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-10-11 15:49:33 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+2024-10-11 15:49:33 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8184 (http)
+2024-10-11 15:49:33 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-10-11 15:49:33 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-11 15:49:33 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-10-11 15:49:33 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 170 ms
+2024-10-11 15:49:33 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-11 15:49:33 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-10-11 15:49:33 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-11 15:49:33 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Starting...
+2024-10-11 15:49:33 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-4 - Added connection com.mysql.cj.jdbc.ConnectionImpl@64572c3b
+2024-10-11 15:49:33 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Start completed.
+2024-10-11 15:49:33 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JTA platform [org.hibernate.engine.transaction.jta.platform.internal.JBossAppServerJtaPlatform]
+2024-10-11 15:49:33 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-11 15:49:33 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-11 15:49:33 [restartedMain] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 105fb2b5-bed4-4814-9310-f1c390d45240
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-10-11 15:49:33 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3171b8ca, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5e934417, org.springframework.security.web.context.SecurityContextHolderFilter@7304bb1e, org.springframework.security.web.header.HeaderWriterFilter@2175422e, org.springframework.security.web.csrf.CsrfFilter@7abeb47, org.springframework.security.web.authentication.logout.LogoutFilter@10950195, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@30d2373c, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@14a493c, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@7fd9e32e, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@8f3111a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2bad97ea, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@aa50e74, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6f32460e, org.springframework.security.web.access.ExceptionTranslationFilter@1f87c5de, org.springframework.security.web.access.intercept.AuthorizationFilter@61b1c794]
+2024-10-11 15:49:33 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-10-11 15:49:33 [restartedMain] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2024-10-11 15:49:33 [restartedMain] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-10-11 15:49:33 [restartedMain] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2024-10-11 15:49:33 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2024-10-11 15:49:33 [restartedMain] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2024-10-11 15:49:33 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2024-10-11 15:49:33 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2024-10-11 15:49:33 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2024-10-11 15:49:33 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2024-10-11 15:49:33 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2024-10-11 15:49:33 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+2024-10-11 15:49:33 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2024-10-11 15:49:33 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2024-10-11 15:49:33 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2024-10-11 15:49:33 [restartedMain] INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2024-10-11 15:49:33 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1728650973883 with initial instances count: 0
+2024-10-11 15:49:33 [restartedMain] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application NOTIFICATION-SERVICE with eureka with status UP
+2024-10-11 15:49:33 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1728650973884, current=UP, previous=STARTING]
+2024-10-11 15:49:33 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_NOTIFICATION-SERVICE/HP:NOTIFICATION-SERVICE:8184: registering service...
+2024-10-11 15:49:33 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8184 (http) with context path ''
+2024-10-11 15:49:33 [restartedMain] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8184
+2024-10-11 15:49:33 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_NOTIFICATION-SERVICE/HP:NOTIFICATION-SERVICE:8184 - registration status: 204
+2024-10-11 15:49:33 [restartedMain] INFO  c.e.n.NotificationserviceApplication - Started NotificationserviceApplication in 0.524 seconds (process running for 1236.871)
+2024-10-11 15:49:33 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-10-11 15:50:03 [DiscoveryClient-CacheRefreshExecutor-%d] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2024-10-11 15:50:03 [DiscoveryClient-CacheRefreshExecutor-%d] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2024-10-11 15:50:03 [DiscoveryClient-CacheRefreshExecutor-%d] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2024-10-11 15:50:03 [DiscoveryClient-CacheRefreshExecutor-%d] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2024-10-11 15:50:03 [DiscoveryClient-CacheRefreshExecutor-%d] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2024-10-11 15:50:03 [DiscoveryClient-CacheRefreshExecutor-%d] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: false
+2024-10-11 15:50:03 [DiscoveryClient-CacheRefreshExecutor-%d] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2024-10-11 15:50:03 [DiscoveryClient-CacheRefreshExecutor-%d] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2024-10-11 15:50:17 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2024-10-11 15:50:17 [Thread-21] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application NOTIFICATION-SERVICE with eureka with status DOWN
+2024-10-11 15:50:17 [Thread-21] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1728651017254, current=DOWN, previous=UP]
+2024-10-11 15:50:17 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_NOTIFICATION-SERVICE/HP:NOTIFICATION-SERVICE:8184: registering service...
+2024-10-11 15:50:17 [Thread-21] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-11 15:50:17 [Thread-21] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown initiated...
+2024-10-11 15:50:17 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_NOTIFICATION-SERVICE/HP:NOTIFICATION-SERVICE:8184 - registration status: 204
+2024-10-11 15:50:17 [Thread-21] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown completed.
+2024-10-11 15:50:17 [Thread-21] INFO  c.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+2024-10-11 15:50:20 [Thread-21] INFO  c.netflix.discovery.DiscoveryClient - Unregistering ...
+2024-10-11 15:50:20 [Thread-21] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_NOTIFICATION-SERVICE/HP:NOTIFICATION-SERVICE:8184 - deregister  status: 200
+2024-10-11 15:50:20 [Thread-21] INFO  c.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient
+2024-10-11 15:50:20 [restartedMain] INFO  c.e.n.NotificationserviceApplication - Starting NotificationserviceApplication using Java 17.0.11 with PID 833190 (/home/kacha/Project/notificationservice/target/classes started by kacha in /home/kacha/Project/notificationservice)
+2024-10-11 15:50:20 [restartedMain] INFO  c.e.n.NotificationserviceApplication - No active profile set, falling back to 1 default profile: "default"
+2024-10-11 15:50:20 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-11 15:50:20 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 2 ms. Found 1 JPA repository interface.
+2024-10-11 15:50:20 [restartedMain] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=5ae48775-a4a9-3b10-b5e7-5d6492251d87
+2024-10-11 15:50:20 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-10-11 15:50:20 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+2024-10-11 15:50:20 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8184 (http)
+2024-10-11 15:50:20 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-10-11 15:50:20 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-11 15:50:20 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-10-11 15:50:20 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 183 ms
+2024-10-11 15:50:20 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-11 15:50:20 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-10-11 15:50:20 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-11 15:50:20 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Starting...
+2024-10-11 15:50:20 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Added connection com.mysql.cj.jdbc.ConnectionImpl@354a411
+2024-10-11 15:50:20 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Start completed.
+2024-10-11 15:50:20 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JTA platform [org.hibernate.engine.transaction.jta.platform.internal.JBossAppServerJtaPlatform]
+2024-10-11 15:50:20 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-11 15:50:20 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-11 15:50:20 [restartedMain] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 539addd1-d678-4672-a28d-03487b795d4e
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-10-11 15:50:20 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7c52fd87, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6b3201b2, org.springframework.security.web.context.SecurityContextHolderFilter@76be8f99, org.springframework.security.web.header.HeaderWriterFilter@3aea2aa3, org.springframework.security.web.csrf.CsrfFilter@42917c, org.springframework.security.web.authentication.logout.LogoutFilter@4abd4a0d, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4a90459f, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@332f57f9, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@23c60df6, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@6a5d93e2, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@62633943, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@58fbd177, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@250248ef, org.springframework.security.web.access.ExceptionTranslationFilter@2713b63e, org.springframework.security.web.access.intercept.AuthorizationFilter@5924cab]
+2024-10-11 15:50:20 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-10-11 15:50:20 [restartedMain] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2024-10-11 15:50:20 [restartedMain] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-10-11 15:50:20 [restartedMain] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2024-10-11 15:50:20 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2024-10-11 15:50:20 [restartedMain] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2024-10-11 15:50:20 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2024-10-11 15:50:20 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2024-10-11 15:50:20 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2024-10-11 15:50:20 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2024-10-11 15:50:20 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2024-10-11 15:50:20 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+2024-10-11 15:50:20 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2024-10-11 15:50:20 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2024-10-11 15:50:20 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2024-10-11 15:50:20 [restartedMain] INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2024-10-11 15:50:20 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1728651020890 with initial instances count: 1
+2024-10-11 15:50:20 [restartedMain] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application NOTIFICATION-SERVICE with eureka with status UP
+2024-10-11 15:50:20 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1728651020891, current=UP, previous=STARTING]
+2024-10-11 15:50:20 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_NOTIFICATION-SERVICE/HP:NOTIFICATION-SERVICE:8184: registering service...
+2024-10-11 15:50:20 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8184 (http) with context path ''
+2024-10-11 15:50:20 [restartedMain] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8184
+2024-10-11 15:50:20 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_NOTIFICATION-SERVICE/HP:NOTIFICATION-SERVICE:8184 - registration status: 204
+2024-10-11 15:50:20 [restartedMain] INFO  c.e.n.NotificationserviceApplication - Started NotificationserviceApplication in 0.618 seconds (process running for 1283.924)
+2024-10-11 15:50:20 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-10-11 15:50:35 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-10-11 15:50:35 [Thread-30] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application NOTIFICATION-SERVICE with eureka with status DOWN
+2024-10-11 15:50:35 [Thread-30] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1728651035156, current=DOWN, previous=UP]
+2024-10-11 15:50:35 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_NOTIFICATION-SERVICE/HP:NOTIFICATION-SERVICE:8184: registering service...
+2024-10-11 15:50:35 [Thread-30] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-11 15:50:35 [Thread-30] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Shutdown initiated...
+2024-10-11 15:50:35 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_NOTIFICATION-SERVICE/HP:NOTIFICATION-SERVICE:8184 - registration status: 204
+2024-10-11 15:50:35 [Thread-30] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Shutdown completed.
+2024-10-11 15:50:35 [Thread-30] INFO  c.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+2024-10-11 15:50:38 [Thread-30] INFO  c.netflix.discovery.DiscoveryClient - Unregistering ...
+2024-10-11 15:50:38 [Thread-30] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_NOTIFICATION-SERVICE/HP:NOTIFICATION-SERVICE:8184 - deregister  status: 200
+2024-10-11 15:50:38 [Thread-30] INFO  c.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient
+2024-10-11 15:50:38 [restartedMain] INFO  c.e.n.NotificationserviceApplication - Starting NotificationserviceApplication using Java 17.0.11 with PID 833190 (/home/kacha/Project/notificationservice/target/classes started by kacha in /home/kacha/Project/notificationservice)
+2024-10-11 15:50:38 [restartedMain] INFO  c.e.n.NotificationserviceApplication - No active profile set, falling back to 1 default profile: "default"
+2024-10-11 15:50:38 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-11 15:50:38 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 2 ms. Found 1 JPA repository interface.
+2024-10-11 15:50:38 [restartedMain] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=a94cf171-6c6c-3ef7-ba7d-8bac9512c742
+2024-10-11 15:50:38 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-10-11 15:50:38 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+2024-10-11 15:50:38 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8184 (http)
+2024-10-11 15:50:38 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-10-11 15:50:38 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-11 15:50:38 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-10-11 15:50:38 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 166 ms
+2024-10-11 15:50:38 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-11 15:50:38 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-10-11 15:50:38 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-11 15:50:38 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Starting...
+2024-10-11 15:50:38 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-6 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1fc3cb3b
+2024-10-11 15:50:38 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Start completed.
+2024-10-11 15:50:38 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JTA platform [org.hibernate.engine.transaction.jta.platform.internal.JBossAppServerJtaPlatform]
+2024-10-11 15:50:38 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-11 15:50:38 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'notificationController': Lookup method resolution failed
+2024-10-11 15:50:38 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-11 15:50:38 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Shutdown initiated...
+2024-10-11 15:50:38 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Shutdown completed.
+2024-10-11 15:50:38 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2024-10-11 15:50:38 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-10-11 15:50:38 [restartedMain] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'notificationController': Lookup method resolution failed
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:498)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:368)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1314)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1209)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:971)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at com.ecommerce.notificationservice.NotificationserviceApplication.main(NotificationserviceApplication.java:11)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.ecommerce.notificationservice.controller.NotificationController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@22d65339]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:483)
+	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:320)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:476)
+	... 24 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: Login
+	at java.base/java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3402)
+	at java.base/java.lang.Class.getDeclaredMethods(Class.java:2504)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:465)
+	... 26 common frames omitted
+Caused by: java.lang.ClassNotFoundException: Login
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:467)
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:121)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525)
+	... 30 common frames omitted
+2024-10-11 15:50:41 [restartedMain] INFO  c.e.n.NotificationserviceApplication - Starting NotificationserviceApplication using Java 17.0.11 with PID 833190 (/home/kacha/Project/notificationservice/target/classes started by kacha in /home/kacha/Project/notificationservice)
+2024-10-11 15:50:41 [restartedMain] INFO  c.e.n.NotificationserviceApplication - No active profile set, falling back to 1 default profile: "default"
+2024-10-11 15:50:41 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-11 15:50:42 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 1 JPA repository interface.
+2024-10-11 15:50:42 [restartedMain] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=a94cf171-6c6c-3ef7-ba7d-8bac9512c742
+2024-10-11 15:50:42 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-10-11 15:50:42 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+2024-10-11 15:50:42 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8184 (http)
+2024-10-11 15:50:42 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-10-11 15:50:42 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-11 15:50:42 [restartedMain] INFO  o.a.c.c.C.[Tomcat-1].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-10-11 15:50:42 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 182 ms
+2024-10-11 15:50:42 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-11 15:50:42 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-10-11 15:50:42 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-11 15:50:42 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Starting...
+2024-10-11 15:50:42 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-7 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1fee39fd
+2024-10-11 15:50:42 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Start completed.
+2024-10-11 15:50:42 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JTA platform [org.hibernate.engine.transaction.jta.platform.internal.JBossAppServerJtaPlatform]
+2024-10-11 15:50:42 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-11 15:50:42 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'notificationController': Lookup method resolution failed
+2024-10-11 15:50:42 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-11 15:50:42 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Shutdown initiated...
+2024-10-11 15:50:42 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Shutdown completed.
+2024-10-11 15:50:42 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2024-10-11 15:50:42 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-10-11 15:50:42 [restartedMain] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'notificationController': Lookup method resolution failed
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:498)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:368)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1314)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1209)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:971)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at com.ecommerce.notificationservice.NotificationserviceApplication.main(NotificationserviceApplication.java:11)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.ecommerce.notificationservice.controller.NotificationController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@66af6c05]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:483)
+	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:320)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:476)
+	... 24 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: Login
+	at java.base/java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3402)
+	at java.base/java.lang.Class.getDeclaredMethods(Class.java:2504)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:465)
+	... 26 common frames omitted
+Caused by: java.lang.ClassNotFoundException: Login
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:467)
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:121)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525)
+	... 30 common frames omitted
+2024-10-11 15:50:43 [restartedMain] INFO  c.e.n.NotificationserviceApplication - Starting NotificationserviceApplication using Java 17.0.11 with PID 833190 (/home/kacha/Project/notificationservice/target/classes started by kacha in /home/kacha/Project/notificationservice)
+2024-10-11 15:50:43 [restartedMain] INFO  c.e.n.NotificationserviceApplication - No active profile set, falling back to 1 default profile: "default"
+2024-10-11 15:50:43 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-11 15:50:43 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 3 ms. Found 1 JPA repository interface.
+2024-10-11 15:50:43 [restartedMain] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=a94cf171-6c6c-3ef7-ba7d-8bac9512c742
+2024-10-11 15:50:43 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-10-11 15:50:43 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+2024-10-11 15:50:43 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8184 (http)
+2024-10-11 15:50:43 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-10-11 15:50:43 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-11 15:50:43 [restartedMain] INFO  o.a.c.c.C.[Tomcat-2].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-10-11 15:50:43 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 166 ms
+2024-10-11 15:50:43 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-11 15:50:43 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-10-11 15:50:43 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-11 15:50:43 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-8 - Starting...
+2024-10-11 15:50:43 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-8 - Added connection com.mysql.cj.jdbc.ConnectionImpl@43256881
+2024-10-11 15:50:43 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-8 - Start completed.
+2024-10-11 15:50:43 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JTA platform [org.hibernate.engine.transaction.jta.platform.internal.JBossAppServerJtaPlatform]
+2024-10-11 15:50:43 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-11 15:50:43 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'notificationController': Lookup method resolution failed
+2024-10-11 15:50:43 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-11 15:50:43 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-8 - Shutdown initiated...
+2024-10-11 15:50:43 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-8 - Shutdown completed.
+2024-10-11 15:50:43 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2024-10-11 15:50:43 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-10-11 15:50:43 [restartedMain] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'notificationController': Lookup method resolution failed
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:498)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:368)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1314)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1209)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:971)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at com.ecommerce.notificationservice.NotificationserviceApplication.main(NotificationserviceApplication.java:11)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.ecommerce.notificationservice.controller.NotificationController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@728bef1c]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:483)
+	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:320)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:476)
+	... 24 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: Login
+	at java.base/java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3402)
+	at java.base/java.lang.Class.getDeclaredMethods(Class.java:2504)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:465)
+	... 26 common frames omitted
+Caused by: java.lang.ClassNotFoundException: Login
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:467)
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:121)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525)
+	... 30 common frames omitted
+2024-10-11 15:50:45 [restartedMain] INFO  c.e.n.NotificationserviceApplication - Starting NotificationserviceApplication using Java 17.0.11 with PID 833190 (/home/kacha/Project/notificationservice/target/classes started by kacha in /home/kacha/Project/notificationservice)
+2024-10-11 15:50:45 [restartedMain] INFO  c.e.n.NotificationserviceApplication - No active profile set, falling back to 1 default profile: "default"
+2024-10-11 15:50:45 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-11 15:50:45 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 2 ms. Found 1 JPA repository interface.
+2024-10-11 15:50:45 [restartedMain] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=a94cf171-6c6c-3ef7-ba7d-8bac9512c742
+2024-10-11 15:50:45 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-10-11 15:50:45 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+2024-10-11 15:50:45 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8184 (http)
+2024-10-11 15:50:45 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-10-11 15:50:45 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-11 15:50:45 [restartedMain] INFO  o.a.c.c.C.[Tomcat-3].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-10-11 15:50:45 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 179 ms
+2024-10-11 15:50:45 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-11 15:50:45 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-10-11 15:50:45 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-11 15:50:45 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-9 - Starting...
+2024-10-11 15:50:45 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-9 - Added connection com.mysql.cj.jdbc.ConnectionImpl@592f7d92
+2024-10-11 15:50:45 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-9 - Start completed.
+2024-10-11 15:50:45 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JTA platform [org.hibernate.engine.transaction.jta.platform.internal.JBossAppServerJtaPlatform]
+2024-10-11 15:50:45 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-11 15:50:45 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'notificationController': Lookup method resolution failed
+2024-10-11 15:50:45 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-11 15:50:45 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-9 - Shutdown initiated...
+2024-10-11 15:50:45 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-9 - Shutdown completed.
+2024-10-11 15:50:45 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2024-10-11 15:50:45 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-10-11 15:50:45 [restartedMain] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'notificationController': Lookup method resolution failed
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:498)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:368)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1314)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1209)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:971)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at com.ecommerce.notificationservice.NotificationserviceApplication.main(NotificationserviceApplication.java:11)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.ecommerce.notificationservice.controller.NotificationController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@61a0c39d]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:483)
+	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:320)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:476)
+	... 24 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: Login
+	at java.base/java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3402)
+	at java.base/java.lang.Class.getDeclaredMethods(Class.java:2504)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:465)
+	... 26 common frames omitted
+Caused by: java.lang.ClassNotFoundException: Login
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:467)
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:121)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525)
+	... 30 common frames omitted
+2024-10-11 15:50:46 [restartedMain] INFO  c.e.n.NotificationserviceApplication - Starting NotificationserviceApplication using Java 17.0.11 with PID 833190 (/home/kacha/Project/notificationservice/target/classes started by kacha in /home/kacha/Project/notificationservice)
+2024-10-11 15:50:46 [restartedMain] INFO  c.e.n.NotificationserviceApplication - No active profile set, falling back to 1 default profile: "default"
+2024-10-11 15:50:47 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-11 15:50:47 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 2 ms. Found 1 JPA repository interface.
+2024-10-11 15:50:47 [restartedMain] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=a94cf171-6c6c-3ef7-ba7d-8bac9512c742
+2024-10-11 15:50:47 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-10-11 15:50:47 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+2024-10-11 15:50:47 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8184 (http)
+2024-10-11 15:50:47 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-10-11 15:50:47 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-11 15:50:47 [restartedMain] INFO  o.a.c.c.C.[Tomcat-4].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-10-11 15:50:47 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 156 ms
+2024-10-11 15:50:47 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-11 15:50:47 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-10-11 15:50:47 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-11 15:50:47 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-10 - Starting...
+2024-10-11 15:50:47 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-10 - Added connection com.mysql.cj.jdbc.ConnectionImpl@109af7c5
+2024-10-11 15:50:47 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-10 - Start completed.
+2024-10-11 15:50:47 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JTA platform [org.hibernate.engine.transaction.jta.platform.internal.JBossAppServerJtaPlatform]
+2024-10-11 15:50:47 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-11 15:50:47 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'notificationController' defined in file [/home/kacha/Project/notificationservice/target/classes/com/ecommerce/notificationservice/controller/NotificationController.class]: Failed to instantiate [com.ecommerce.notificationservice.controller.NotificationController]: Constructor threw exception
+2024-10-11 15:50:47 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-11 15:50:47 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-10 - Shutdown initiated...
+2024-10-11 15:50:47 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-10 - Shutdown completed.
+2024-10-11 15:50:47 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2024-10-11 15:50:47 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-10-11 15:50:47 [restartedMain] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'notificationController' defined in file [/home/kacha/Project/notificationservice/target/classes/com/ecommerce/notificationservice/controller/NotificationController.class]: Failed to instantiate [com.ecommerce.notificationservice.controller.NotificationController]: Constructor threw exception
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1337)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:971)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at com.ecommerce.notificationservice.NotificationserviceApplication.main(NotificationserviceApplication.java:11)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.ecommerce.notificationservice.controller.NotificationController]: Constructor threw exception
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:221)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:94)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1331)
+	... 22 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problems: 
+	The import com.ecommerce.paymentservice cannot be resolved
+	The import com.ecommerce.paymentservice cannot be resolved
+	NotificationService cannot be resolved to a type
+	SmsService cannot be resolved to a type
+	NotificationService cannot be resolved to a type
+	NotificationService cannot be resolved to a type
+	NotificationService cannot be resolved to a type
+	NotificationService cannot be resolved to a type
+	NotificationService cannot be resolved to a type
+
+	at com.ecommerce.notificationservice.controller.NotificationController.<init>(NotificationController.java:7)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:195)
+	... 24 common frames omitted
+2024-10-11 15:50:51 [restartedMain] INFO  c.e.n.NotificationserviceApplication - Starting NotificationserviceApplication using Java 17.0.11 with PID 833190 (/home/kacha/Project/notificationservice/target/classes started by kacha in /home/kacha/Project/notificationservice)
+2024-10-11 15:50:51 [restartedMain] INFO  c.e.n.NotificationserviceApplication - No active profile set, falling back to 1 default profile: "default"
+2024-10-11 15:50:51 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-11 15:50:51 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 2 ms. Found 1 JPA repository interface.
+2024-10-11 15:50:51 [restartedMain] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=a94cf171-6c6c-3ef7-ba7d-8bac9512c742
+2024-10-11 15:50:51 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-10-11 15:50:51 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+2024-10-11 15:50:51 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8184 (http)
+2024-10-11 15:50:51 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-10-11 15:50:51 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-11 15:50:51 [restartedMain] INFO  o.a.c.c.C.[Tomcat-5].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-10-11 15:50:51 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 178 ms
+2024-10-11 15:50:51 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-11 15:50:51 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-10-11 15:50:51 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-11 15:50:51 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-11 - Starting...
+2024-10-11 15:50:51 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-11 - Added connection com.mysql.cj.jdbc.ConnectionImpl@54a2299c
+2024-10-11 15:50:51 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-11 - Start completed.
+2024-10-11 15:50:51 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JTA platform [org.hibernate.engine.transaction.jta.platform.internal.JBossAppServerJtaPlatform]
+2024-10-11 15:50:51 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-11 15:50:51 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'notificationController' defined in file [/home/kacha/Project/notificationservice/target/classes/com/ecommerce/notificationservice/controller/NotificationController.class]: Failed to instantiate [com.ecommerce.notificationservice.controller.NotificationController]: Constructor threw exception
+2024-10-11 15:50:51 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-11 15:50:51 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-11 - Shutdown initiated...
+2024-10-11 15:50:51 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-11 - Shutdown completed.
+2024-10-11 15:50:51 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2024-10-11 15:50:51 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-10-11 15:50:51 [restartedMain] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'notificationController' defined in file [/home/kacha/Project/notificationservice/target/classes/com/ecommerce/notificationservice/controller/NotificationController.class]: Failed to instantiate [com.ecommerce.notificationservice.controller.NotificationController]: Constructor threw exception
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1337)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:971)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at com.ecommerce.notificationservice.NotificationserviceApplication.main(NotificationserviceApplication.java:11)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.ecommerce.notificationservice.controller.NotificationController]: Constructor threw exception
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:221)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:94)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1331)
+	... 22 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problems: 
+	The import com.ecommerce.paymentservice cannot be resolved
+	SmsService cannot be resolved to a type
+
+	at com.ecommerce.notificationservice.controller.NotificationController.<init>(NotificationController.java:8)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:195)
+	... 24 common frames omitted
+2024-10-11 15:50:53 [restartedMain] INFO  c.e.n.NotificationserviceApplication - Starting NotificationserviceApplication using Java 17.0.11 with PID 833190 (/home/kacha/Project/notificationservice/target/classes started by kacha in /home/kacha/Project/notificationservice)
+2024-10-11 15:50:53 [restartedMain] INFO  c.e.n.NotificationserviceApplication - No active profile set, falling back to 1 default profile: "default"
+2024-10-11 15:50:53 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-11 15:50:53 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 2 ms. Found 1 JPA repository interface.
+2024-10-11 15:50:53 [restartedMain] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=a94cf171-6c6c-3ef7-ba7d-8bac9512c742
+2024-10-11 15:50:53 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-10-11 15:50:53 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+2024-10-11 15:50:53 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8184 (http)
+2024-10-11 15:50:53 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-10-11 15:50:53 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-11 15:50:53 [restartedMain] INFO  o.a.c.c.C.[Tomcat-6].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-10-11 15:50:53 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 171 ms
+2024-10-11 15:50:53 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-11 15:50:53 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-10-11 15:50:53 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-11 15:50:53 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-12 - Starting...
+2024-10-11 15:50:53 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-12 - Added connection com.mysql.cj.jdbc.ConnectionImpl@b51a633
+2024-10-11 15:50:53 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-12 - Start completed.
+2024-10-11 15:50:53 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JTA platform [org.hibernate.engine.transaction.jta.platform.internal.JBossAppServerJtaPlatform]
+2024-10-11 15:50:53 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-11 15:50:53 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-11 15:50:53 [restartedMain] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: df428642-76f3-42de-90a5-85fa601cfa30
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-10-11 15:50:53 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@32c49536, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5efda880, org.springframework.security.web.context.SecurityContextHolderFilter@7936159, org.springframework.security.web.header.HeaderWriterFilter@421d9109, org.springframework.security.web.csrf.CsrfFilter@7a867015, org.springframework.security.web.authentication.logout.LogoutFilter@3326c18b, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@8134d41, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@42fca12, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@4c169f5b, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@dbcff51, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4edcaf66, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2a148380, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@263ab7ff, org.springframework.security.web.access.ExceptionTranslationFilter@4de53924, org.springframework.security.web.access.intercept.AuthorizationFilter@47257e10]
+2024-10-11 15:50:53 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-10-11 15:50:53 [restartedMain] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2024-10-11 15:50:53 [restartedMain] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-10-11 15:50:53 [restartedMain] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2024-10-11 15:50:53 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2024-10-11 15:50:53 [restartedMain] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2024-10-11 15:50:53 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2024-10-11 15:50:53 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2024-10-11 15:50:53 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2024-10-11 15:50:53 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2024-10-11 15:50:53 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2024-10-11 15:50:53 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+2024-10-11 15:50:53 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2024-10-11 15:50:53 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2024-10-11 15:50:53 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2024-10-11 15:50:53 [restartedMain] INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2024-10-11 15:50:53 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1728651053874 with initial instances count: 1
+2024-10-11 15:50:53 [restartedMain] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application NOTIFICATION-SERVICE with eureka with status UP
+2024-10-11 15:50:53 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1728651053875, current=UP, previous=STARTING]
+2024-10-11 15:50:53 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_NOTIFICATION-SERVICE/HP:NOTIFICATION-SERVICE:8184: registering service...
+2024-10-11 15:50:53 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8184 (http) with context path ''
+2024-10-11 15:50:53 [restartedMain] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8184
+2024-10-11 15:50:53 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_NOTIFICATION-SERVICE/HP:NOTIFICATION-SERVICE:8184 - registration status: 204
+2024-10-11 15:50:53 [restartedMain] INFO  c.e.n.NotificationserviceApplication - Started NotificationserviceApplication in 0.582 seconds (process running for 1316.902)
+2024-10-11 15:50:53 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-10-11 15:51:12 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-10-11 15:51:12 [Thread-36] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application NOTIFICATION-SERVICE with eureka with status DOWN
+2024-10-11 15:51:12 [Thread-36] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1728651072195, current=DOWN, previous=UP]
+2024-10-11 15:51:12 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_NOTIFICATION-SERVICE/HP:NOTIFICATION-SERVICE:8184: registering service...
+2024-10-11 15:51:12 [Thread-36] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-11 15:51:12 [Thread-36] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-12 - Shutdown initiated...
+2024-10-11 15:51:12 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_NOTIFICATION-SERVICE/HP:NOTIFICATION-SERVICE:8184 - registration status: 204
+2024-10-11 15:51:12 [Thread-36] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-12 - Shutdown completed.
+2024-10-11 15:51:12 [Thread-36] INFO  c.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+2024-10-11 15:51:15 [Thread-36] INFO  c.netflix.discovery.DiscoveryClient - Unregistering ...
+2024-10-11 15:51:15 [Thread-36] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_NOTIFICATION-SERVICE/HP:NOTIFICATION-SERVICE:8184 - deregister  status: 200
+2024-10-11 15:51:15 [Thread-36] INFO  c.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient
+2024-10-11 15:51:15 [restartedMain] INFO  c.e.n.NotificationserviceApplication - Starting NotificationserviceApplication using Java 17.0.11 with PID 833190 (/home/kacha/Project/notificationservice/target/classes started by kacha in /home/kacha/Project/notificationservice)
+2024-10-11 15:51:15 [restartedMain] INFO  c.e.n.NotificationserviceApplication - No active profile set, falling back to 1 default profile: "default"
+2024-10-11 15:51:15 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-11 15:51:15 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 2 ms. Found 1 JPA repository interface.
+2024-10-11 15:51:15 [restartedMain] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=a94cf171-6c6c-3ef7-ba7d-8bac9512c742
+2024-10-11 15:51:15 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-10-11 15:51:15 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+2024-10-11 15:51:15 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8184 (http)
+2024-10-11 15:51:15 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-10-11 15:51:15 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-11 15:51:15 [restartedMain] INFO  o.a.c.c.C.[Tomcat-6].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-10-11 15:51:15 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 153 ms
+2024-10-11 15:51:15 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-11 15:51:15 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-10-11 15:51:15 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-11 15:51:15 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-13 - Starting...
+2024-10-11 15:51:15 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-13 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5799dd51
+2024-10-11 15:51:15 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-13 - Start completed.
+2024-10-11 15:51:15 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JTA platform [org.hibernate.engine.transaction.jta.platform.internal.JBossAppServerJtaPlatform]
+2024-10-11 15:51:15 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-11 15:51:15 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-11 15:51:15 [restartedMain] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: c654d43b-d25a-41d1-a2ea-b3ee3be783d6
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-10-11 15:51:15 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@39e0e478, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@55f62574, org.springframework.security.web.context.SecurityContextHolderFilter@78619b77, org.springframework.security.web.header.HeaderWriterFilter@3674a7ce, org.springframework.security.web.csrf.CsrfFilter@4650068c, org.springframework.security.web.authentication.logout.LogoutFilter@41748a1f, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@76a85ee4, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@176ff45d, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@619d1e50, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@13e9065c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3e439691, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4b669d2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3a1d3fd9, org.springframework.security.web.access.ExceptionTranslationFilter@2c72d7bc, org.springframework.security.web.access.intercept.AuthorizationFilter@1e1e4c9c]
+2024-10-11 15:51:15 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-10-11 15:51:15 [restartedMain] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2024-10-11 15:51:15 [restartedMain] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-10-11 15:51:15 [restartedMain] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2024-10-11 15:51:15 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2024-10-11 15:51:15 [restartedMain] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2024-10-11 15:51:15 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2024-10-11 15:51:15 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2024-10-11 15:51:15 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2024-10-11 15:51:15 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2024-10-11 15:51:15 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2024-10-11 15:51:15 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+2024-10-11 15:51:15 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2024-10-11 15:51:15 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2024-10-11 15:51:15 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2024-10-11 15:51:15 [restartedMain] INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2024-10-11 15:51:15 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1728651075772 with initial instances count: 1
+2024-10-11 15:51:15 [restartedMain] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application NOTIFICATION-SERVICE with eureka with status UP
+2024-10-11 15:51:15 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1728651075774, current=UP, previous=STARTING]
+2024-10-11 15:51:15 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_NOTIFICATION-SERVICE/HP:NOTIFICATION-SERVICE:8184: registering service...
+2024-10-11 15:51:15 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8184 (http) with context path ''
+2024-10-11 15:51:15 [restartedMain] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8184
+2024-10-11 15:51:15 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_NOTIFICATION-SERVICE/HP:NOTIFICATION-SERVICE:8184 - registration status: 204
+2024-10-11 15:51:15 [restartedMain] INFO  c.e.n.NotificationserviceApplication - Started NotificationserviceApplication in 0.571 seconds (process running for 1338.816)
+2024-10-11 15:51:15 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-10-11 15:51:27 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-10-11 15:51:27 [Thread-66] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application NOTIFICATION-SERVICE with eureka with status DOWN
+2024-10-11 15:51:27 [Thread-66] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1728651087475, current=DOWN, previous=UP]
+2024-10-11 15:51:27 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_NOTIFICATION-SERVICE/HP:NOTIFICATION-SERVICE:8184: registering service...
+2024-10-11 15:51:27 [Thread-66] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-11 15:51:27 [Thread-66] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-13 - Shutdown initiated...
+2024-10-11 15:51:27 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_NOTIFICATION-SERVICE/HP:NOTIFICATION-SERVICE:8184 - registration status: 204
+2024-10-11 15:51:27 [Thread-66] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-13 - Shutdown completed.
+2024-10-11 15:51:27 [Thread-66] INFO  c.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+2024-10-11 15:51:30 [Thread-66] INFO  c.netflix.discovery.DiscoveryClient - Unregistering ...
+2024-10-11 15:51:30 [Thread-66] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_NOTIFICATION-SERVICE/HP:NOTIFICATION-SERVICE:8184 - deregister  status: 200
+2024-10-11 15:51:30 [Thread-66] INFO  c.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient
+2024-10-11 15:51:30 [restartedMain] INFO  c.e.n.NotificationserviceApplication - Starting NotificationserviceApplication using Java 17.0.11 with PID 833190 (/home/kacha/Project/notificationservice/target/classes started by kacha in /home/kacha/Project/notificationservice)
+2024-10-11 15:51:30 [restartedMain] INFO  c.e.n.NotificationserviceApplication - No active profile set, falling back to 1 default profile: "default"
+2024-10-11 15:51:30 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-11 15:51:30 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 2 ms. Found 1 JPA repository interface.
+2024-10-11 15:51:30 [restartedMain] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=a94cf171-6c6c-3ef7-ba7d-8bac9512c742
+2024-10-11 15:51:30 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-10-11 15:51:30 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+2024-10-11 15:51:30 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8184 (http)
+2024-10-11 15:51:30 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-10-11 15:51:30 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-11 15:51:30 [restartedMain] INFO  o.a.c.c.C.[Tomcat-6].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-10-11 15:51:30 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 156 ms
+2024-10-11 15:51:30 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-11 15:51:30 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-10-11 15:51:30 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-11 15:51:30 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-14 - Starting...
+2024-10-11 15:51:30 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-14 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6cf6acd9
+2024-10-11 15:51:30 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-14 - Start completed.
+2024-10-11 15:51:30 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JTA platform [org.hibernate.engine.transaction.jta.platform.internal.JBossAppServerJtaPlatform]
+2024-10-11 15:51:30 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-11 15:51:30 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-11 15:51:30 [restartedMain] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 8a3e4312-120c-4b55-8e02-555cacc54516
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-10-11 15:51:30 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@433883b2, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@53f408cc, org.springframework.security.web.context.SecurityContextHolderFilter@55bdaf36, org.springframework.security.web.header.HeaderWriterFilter@42e0b405, org.springframework.security.web.csrf.CsrfFilter@1f0bb1f, org.springframework.security.web.authentication.logout.LogoutFilter@7e666347, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@57181bab, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@19a2ee9a, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@44a6945a, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@1a293654, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5191dedd, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5e2529c7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@176e910c, org.springframework.security.web.access.ExceptionTranslationFilter@4a88a67e, org.springframework.security.web.access.intercept.AuthorizationFilter@722efc6]
+2024-10-11 15:51:30 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-10-11 15:51:31 [restartedMain] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2024-10-11 15:51:31 [restartedMain] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-10-11 15:51:31 [restartedMain] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2024-10-11 15:51:31 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2024-10-11 15:51:31 [restartedMain] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2024-10-11 15:51:31 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2024-10-11 15:51:31 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2024-10-11 15:51:31 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2024-10-11 15:51:31 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2024-10-11 15:51:31 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2024-10-11 15:51:31 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+2024-10-11 15:51:31 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2024-10-11 15:51:31 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2024-10-11 15:51:31 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2024-10-11 15:51:31 [restartedMain] INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2024-10-11 15:51:31 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1728651091047 with initial instances count: 1
+2024-10-11 15:51:31 [restartedMain] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application NOTIFICATION-SERVICE with eureka with status UP
+2024-10-11 15:51:31 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1728651091048, current=UP, previous=STARTING]
+2024-10-11 15:51:31 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_NOTIFICATION-SERVICE/HP:NOTIFICATION-SERVICE:8184: registering service...
+2024-10-11 15:51:31 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8184 (http) with context path ''
+2024-10-11 15:51:31 [restartedMain] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8184
+2024-10-11 15:51:31 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_NOTIFICATION-SERVICE/HP:NOTIFICATION-SERVICE:8184 - registration status: 204
+2024-10-11 15:51:31 [restartedMain] INFO  c.e.n.NotificationserviceApplication - Started NotificationserviceApplication in 0.571 seconds (process running for 1354.09)
+2024-10-11 15:51:31 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-10-11 15:51:39 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-10-11 15:51:39 [Thread-72] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application NOTIFICATION-SERVICE with eureka with status DOWN
+2024-10-11 15:51:39 [Thread-72] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1728651099331, current=DOWN, previous=UP]
+2024-10-11 15:51:39 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_NOTIFICATION-SERVICE/HP:NOTIFICATION-SERVICE:8184: registering service...
+2024-10-11 15:51:39 [Thread-72] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-11 15:51:39 [Thread-72] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-14 - Shutdown initiated...
+2024-10-11 15:51:39 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_NOTIFICATION-SERVICE/HP:NOTIFICATION-SERVICE:8184 - registration status: 204
+2024-10-11 15:51:39 [Thread-72] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-14 - Shutdown completed.
+2024-10-11 15:51:39 [Thread-72] INFO  c.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+2024-10-11 15:51:42 [Thread-72] INFO  c.netflix.discovery.DiscoveryClient - Unregistering ...
+2024-10-11 15:51:42 [Thread-72] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_NOTIFICATION-SERVICE/HP:NOTIFICATION-SERVICE:8184 - deregister  status: 200
+2024-10-11 15:51:42 [Thread-72] INFO  c.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient
+2024-10-11 15:51:42 [restartedMain] INFO  c.e.n.NotificationserviceApplication - Starting NotificationserviceApplication using Java 17.0.11 with PID 833190 (/home/kacha/Project/notificationservice/target/classes started by kacha in /home/kacha/Project/notificationservice)
+2024-10-11 15:51:42 [restartedMain] INFO  c.e.n.NotificationserviceApplication - No active profile set, falling back to 1 default profile: "default"
+2024-10-11 15:51:42 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-11 15:51:42 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 2 ms. Found 1 JPA repository interface.
+2024-10-11 15:51:42 [restartedMain] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=a94cf171-6c6c-3ef7-ba7d-8bac9512c742
+2024-10-11 15:51:42 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-10-11 15:51:42 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+2024-10-11 15:51:42 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8184 (http)
+2024-10-11 15:51:42 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-10-11 15:51:42 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-11 15:51:42 [restartedMain] INFO  o.a.c.c.C.[Tomcat-6].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-10-11 15:51:42 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 166 ms
+2024-10-11 15:51:42 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-11 15:51:42 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-10-11 15:51:42 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-11 15:51:42 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-15 - Starting...
+2024-10-11 15:51:42 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-15 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7a960b67
+2024-10-11 15:51:42 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-15 - Start completed.
+2024-10-11 15:51:42 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JTA platform [org.hibernate.engine.transaction.jta.platform.internal.JBossAppServerJtaPlatform]
+2024-10-11 15:51:42 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-11 15:51:42 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-11 15:51:42 [restartedMain] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 4e8c7837-c2eb-4b4c-b6e7-513f4ccd5ccd
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-10-11 15:51:42 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@57bddd97, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4770f9a9, org.springframework.security.web.context.SecurityContextHolderFilter@d8a6cc9, org.springframework.security.web.header.HeaderWriterFilter@69b2fe7, org.springframework.security.web.csrf.CsrfFilter@614c5daa, org.springframework.security.web.authentication.logout.LogoutFilter@15386f25, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7f278fc8, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@3e433f8, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@46a7740, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@2930864e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@ea8c1df, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5cdfdb93, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@29c59375, org.springframework.security.web.access.ExceptionTranslationFilter@569096b7, org.springframework.security.web.access.intercept.AuthorizationFilter@1540a3ba]
+2024-10-11 15:51:42 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-10-11 15:51:42 [restartedMain] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2024-10-11 15:51:42 [restartedMain] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-10-11 15:51:42 [restartedMain] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2024-10-11 15:51:42 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2024-10-11 15:51:42 [restartedMain] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2024-10-11 15:51:42 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2024-10-11 15:51:42 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2024-10-11 15:51:42 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2024-10-11 15:51:42 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2024-10-11 15:51:42 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2024-10-11 15:51:42 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+2024-10-11 15:51:42 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2024-10-11 15:51:42 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2024-10-11 15:51:42 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2024-10-11 15:51:42 [restartedMain] INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2024-10-11 15:51:42 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1728651102941 with initial instances count: 1
+2024-10-11 15:51:42 [restartedMain] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application NOTIFICATION-SERVICE with eureka with status UP
+2024-10-11 15:51:42 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1728651102943, current=UP, previous=STARTING]
+2024-10-11 15:51:42 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_NOTIFICATION-SERVICE/HP:NOTIFICATION-SERVICE:8184: registering service...
+2024-10-11 15:51:42 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8184 (http) with context path ''
+2024-10-11 15:51:42 [restartedMain] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8184
+2024-10-11 15:51:42 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_NOTIFICATION-SERVICE/HP:NOTIFICATION-SERVICE:8184 - registration status: 204
+2024-10-11 15:51:42 [restartedMain] INFO  c.e.n.NotificationserviceApplication - Started NotificationserviceApplication in 0.561 seconds (process running for 1365.947)
+2024-10-11 15:51:42 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-10-11 15:52:00 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2024-10-11 15:52:00 [Thread-78] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application NOTIFICATION-SERVICE with eureka with status DOWN
+2024-10-11 15:52:00 [Thread-78] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1728651120239, current=DOWN, previous=UP]
+2024-10-11 15:52:00 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_NOTIFICATION-SERVICE/HP:NOTIFICATION-SERVICE:8184: registering service...
+2024-10-11 15:52:00 [Thread-78] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-11 15:52:00 [Thread-78] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-15 - Shutdown initiated...
+2024-10-11 15:52:00 [Thread-78] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-15 - Shutdown completed.
+2024-10-11 15:52:00 [Thread-78] INFO  c.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+2024-10-11 15:52:00 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_NOTIFICATION-SERVICE/HP:NOTIFICATION-SERVICE:8184 - registration status: 204
+2024-10-11 15:52:00 [Thread-78] INFO  c.netflix.discovery.DiscoveryClient - Unregistering ...
+2024-10-11 15:52:00 [Thread-78] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_NOTIFICATION-SERVICE/HP:NOTIFICATION-SERVICE:8184 - deregister  status: 200
+2024-10-11 15:52:00 [Thread-78] INFO  c.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient
+2024-10-11 15:52:00 [restartedMain] INFO  c.e.n.NotificationserviceApplication - Starting NotificationserviceApplication using Java 17.0.11 with PID 833190 (/home/kacha/Project/notificationservice/target/classes started by kacha in /home/kacha/Project/notificationservice)
+2024-10-11 15:52:00 [restartedMain] INFO  c.e.n.NotificationserviceApplication - No active profile set, falling back to 1 default profile: "default"
+2024-10-11 15:52:00 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-11 15:52:00 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 2 ms. Found 1 JPA repository interface.
+2024-10-11 15:52:00 [restartedMain] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=a94cf171-6c6c-3ef7-ba7d-8bac9512c742
+2024-10-11 15:52:00 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-10-11 15:52:00 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+2024-10-11 15:52:00 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8184 (http)
+2024-10-11 15:52:00 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-10-11 15:52:00 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-11 15:52:00 [restartedMain] INFO  o.a.c.c.C.[Tomcat-6].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-10-11 15:52:00 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 170 ms
+2024-10-11 15:52:00 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-11 15:52:00 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-10-11 15:52:00 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-11 15:52:00 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-16 - Starting...
+2024-10-11 15:52:00 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-16 - Added connection com.mysql.cj.jdbc.ConnectionImpl@67c6821c
+2024-10-11 15:52:00 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-16 - Start completed.
+2024-10-11 15:52:00 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JTA platform [org.hibernate.engine.transaction.jta.platform.internal.JBossAppServerJtaPlatform]
+2024-10-11 15:52:00 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-11 15:52:00 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-11 15:52:00 [restartedMain] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 007a274c-cb2a-4717-82b7-20a71993b025
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-10-11 15:52:00 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7349a96f, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3d8b0fed, org.springframework.security.web.context.SecurityContextHolderFilter@38f9bffa, org.springframework.security.web.header.HeaderWriterFilter@12798e90, org.springframework.security.web.csrf.CsrfFilter@727556ea, org.springframework.security.web.authentication.logout.LogoutFilter@7acd5fae, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@16b47bb7, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@74c61fb8, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@8d7a228, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@69476e0, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@60e37c09, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2a951974, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2dd1f6a4, org.springframework.security.web.access.ExceptionTranslationFilter@4591e5a4, org.springframework.security.web.access.intercept.AuthorizationFilter@3c6e4c5f]
+2024-10-11 15:52:00 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-10-11 15:52:00 [restartedMain] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2024-10-11 15:52:00 [restartedMain] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-10-11 15:52:00 [restartedMain] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2024-10-11 15:52:00 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2024-10-11 15:52:00 [restartedMain] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2024-10-11 15:52:00 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2024-10-11 15:52:00 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2024-10-11 15:52:00 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2024-10-11 15:52:00 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2024-10-11 15:52:00 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2024-10-11 15:52:00 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+2024-10-11 15:52:00 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2024-10-11 15:52:00 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2024-10-11 15:52:00 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2024-10-11 15:52:00 [restartedMain] INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2024-10-11 15:52:00 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1728651120839 with initial instances count: 1
+2024-10-11 15:52:00 [restartedMain] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application NOTIFICATION-SERVICE with eureka with status UP
+2024-10-11 15:52:00 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1728651120840, current=UP, previous=STARTING]
+2024-10-11 15:52:00 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_NOTIFICATION-SERVICE/HP:NOTIFICATION-SERVICE:8184: registering service...
+2024-10-11 15:52:00 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8184 (http) with context path ''
+2024-10-11 15:52:00 [restartedMain] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8184
+2024-10-11 15:52:00 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_NOTIFICATION-SERVICE/HP:NOTIFICATION-SERVICE:8184 - registration status: 204
+2024-10-11 15:52:00 [restartedMain] INFO  c.e.n.NotificationserviceApplication - Started NotificationserviceApplication in 0.559 seconds (process running for 1383.84)
+2024-10-11 15:52:00 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-10-11 15:52:14 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-10-11 15:52:14 [Thread-84] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application NOTIFICATION-SERVICE with eureka with status DOWN
+2024-10-11 15:52:14 [Thread-84] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1728651134098, current=DOWN, previous=UP]
+2024-10-11 15:52:14 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_NOTIFICATION-SERVICE/HP:NOTIFICATION-SERVICE:8184: registering service...
+2024-10-11 15:52:14 [Thread-84] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-11 15:52:14 [Thread-84] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-16 - Shutdown initiated...
+2024-10-11 15:52:14 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_NOTIFICATION-SERVICE/HP:NOTIFICATION-SERVICE:8184 - registration status: 204
+2024-10-11 15:52:14 [Thread-84] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-16 - Shutdown completed.
+2024-10-11 15:52:14 [Thread-84] INFO  c.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+2024-10-11 15:52:17 [Thread-84] INFO  c.netflix.discovery.DiscoveryClient - Unregistering ...
+2024-10-11 15:52:17 [Thread-84] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_NOTIFICATION-SERVICE/HP:NOTIFICATION-SERVICE:8184 - deregister  status: 200
+2024-10-11 15:52:17 [Thread-84] INFO  c.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient
+2024-10-11 15:52:17 [restartedMain] INFO  c.e.n.NotificationserviceApplication - Starting NotificationserviceApplication using Java 17.0.11 with PID 833190 (/home/kacha/Project/notificationservice/target/classes started by kacha in /home/kacha/Project/notificationservice)
+2024-10-11 15:52:17 [restartedMain] INFO  c.e.n.NotificationserviceApplication - No active profile set, falling back to 1 default profile: "default"
+2024-10-11 15:52:17 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-11 15:52:17 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 2 ms. Found 1 JPA repository interface.
+2024-10-11 15:52:17 [restartedMain] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=24cdbe16-8077-37b2-b5e0-1c93bd7f8c79
+2024-10-11 15:52:17 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-10-11 15:52:17 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+2024-10-11 15:52:17 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8184 (http)
+2024-10-11 15:52:17 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-10-11 15:52:17 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-11 15:52:17 [restartedMain] INFO  o.a.c.c.C.[Tomcat-6].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-10-11 15:52:17 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 178 ms
+2024-10-11 15:52:17 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-11 15:52:17 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-10-11 15:52:17 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-11 15:52:17 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-17 - Starting...
+2024-10-11 15:52:17 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-17 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2697cab5
+2024-10-11 15:52:17 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-17 - Start completed.
+2024-10-11 15:52:17 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JTA platform [org.hibernate.engine.transaction.jta.platform.internal.JBossAppServerJtaPlatform]
+2024-10-11 15:52:17 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-11 15:52:17 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sendSmsController' defined in file [/home/kacha/Project/notificationservice/target/classes/com/ecommerce/notificationservice/controller/SendSmsController.class]: Failed to instantiate [com.ecommerce.notificationservice.controller.SendSmsController]: Constructor threw exception
+2024-10-11 15:52:17 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-11 15:52:17 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-17 - Shutdown initiated...
+2024-10-11 15:52:17 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-17 - Shutdown completed.
+2024-10-11 15:52:17 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2024-10-11 15:52:17 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-10-11 15:52:17 [restartedMain] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sendSmsController' defined in file [/home/kacha/Project/notificationservice/target/classes/com/ecommerce/notificationservice/controller/SendSmsController.class]: Failed to instantiate [com.ecommerce.notificationservice.controller.SendSmsController]: Constructor threw exception
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1337)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:971)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at com.ecommerce.notificationservice.NotificationserviceApplication.main(NotificationserviceApplication.java:11)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.ecommerce.notificationservice.controller.SendSmsController]: Constructor threw exception
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:221)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:94)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1331)
+	... 22 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problems: 
+	The import com.ecommerce.paymentservice cannot be resolved
+	SmsService cannot be resolved to a type
+	SmsService cannot be resolved to a type
+
+	at com.ecommerce.notificationservice.controller.SendSmsController.<init>(SendSmsController.java:3)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:195)
+	... 24 common frames omitted
+2024-10-11 15:52:21 [restartedMain] INFO  c.e.n.NotificationserviceApplication - Starting NotificationserviceApplication using Java 17.0.11 with PID 833190 (/home/kacha/Project/notificationservice/target/classes started by kacha in /home/kacha/Project/notificationservice)
+2024-10-11 15:52:21 [restartedMain] INFO  c.e.n.NotificationserviceApplication - No active profile set, falling back to 1 default profile: "default"
+2024-10-11 15:52:22 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-11 15:52:22 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 3 ms. Found 1 JPA repository interface.
+2024-10-11 15:52:22 [restartedMain] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=24cdbe16-8077-37b2-b5e0-1c93bd7f8c79
+2024-10-11 15:52:22 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-10-11 15:52:22 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+2024-10-11 15:52:22 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8184 (http)
+2024-10-11 15:52:22 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-10-11 15:52:22 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-11 15:52:22 [restartedMain] INFO  o.a.c.c.C.[Tomcat-7].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-10-11 15:52:22 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 195 ms
+2024-10-11 15:52:22 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-11 15:52:22 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-10-11 15:52:22 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-11 15:52:22 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-18 - Starting...
+2024-10-11 15:52:22 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-18 - Added connection com.mysql.cj.jdbc.ConnectionImpl@14262a19
+2024-10-11 15:52:22 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-18 - Start completed.
+2024-10-11 15:52:22 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JTA platform [org.hibernate.engine.transaction.jta.platform.internal.JBossAppServerJtaPlatform]
+2024-10-11 15:52:22 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-11 15:52:22 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-11 15:52:22 [restartedMain] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 2c509cd8-986f-4e87-b91e-d3668aa4b388
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-10-11 15:52:22 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@34663ce8, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@81fc953, org.springframework.security.web.context.SecurityContextHolderFilter@4ef5ff41, org.springframework.security.web.header.HeaderWriterFilter@69898a9f, org.springframework.security.web.csrf.CsrfFilter@2d61f404, org.springframework.security.web.authentication.logout.LogoutFilter@75b875fe, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@40b0b38f, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@4f0186a1, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@4d763f14, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@769139e2, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6c16f34f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6af93413, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@32575171, org.springframework.security.web.access.ExceptionTranslationFilter@34365bed, org.springframework.security.web.access.intercept.AuthorizationFilter@15353e01]
+2024-10-11 15:52:22 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-10-11 15:52:22 [restartedMain] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2024-10-11 15:52:22 [restartedMain] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-10-11 15:52:22 [restartedMain] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2024-10-11 15:52:22 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2024-10-11 15:52:22 [restartedMain] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2024-10-11 15:52:22 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2024-10-11 15:52:22 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2024-10-11 15:52:22 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2024-10-11 15:52:22 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2024-10-11 15:52:22 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2024-10-11 15:52:22 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+2024-10-11 15:52:22 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2024-10-11 15:52:22 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2024-10-11 15:52:22 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2024-10-11 15:52:22 [restartedMain] INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2024-10-11 15:52:22 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1728651142441 with initial instances count: 1
+2024-10-11 15:52:22 [restartedMain] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application NOTIFICATION-SERVICE with eureka with status UP
+2024-10-11 15:52:22 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1728651142442, current=UP, previous=STARTING]
+2024-10-11 15:52:22 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_NOTIFICATION-SERVICE/HP:NOTIFICATION-SERVICE:8184: registering service...
+2024-10-11 15:52:22 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8184 (http) with context path ''
+2024-10-11 15:52:22 [restartedMain] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8184
+2024-10-11 15:52:22 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_NOTIFICATION-SERVICE/HP:NOTIFICATION-SERVICE:8184 - registration status: 204
+2024-10-11 15:52:22 [restartedMain] INFO  c.e.n.NotificationserviceApplication - Started NotificationserviceApplication in 0.494 seconds (process running for 1405.435)
+2024-10-11 15:52:22 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-10-11 15:52:23 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-10-11 15:52:23 [Thread-90] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application NOTIFICATION-SERVICE with eureka with status DOWN
+2024-10-11 15:52:23 [Thread-90] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1728651143757, current=DOWN, previous=UP]
+2024-10-11 15:52:23 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_NOTIFICATION-SERVICE/HP:NOTIFICATION-SERVICE:8184: registering service...
+2024-10-11 15:52:23 [Thread-90] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-11 15:52:23 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_NOTIFICATION-SERVICE/HP:NOTIFICATION-SERVICE:8184 - registration status: 204
+2024-10-11 15:52:23 [Thread-90] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-18 - Shutdown initiated...
+2024-10-11 15:52:23 [Thread-90] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-18 - Shutdown completed.
+2024-10-11 15:52:23 [Thread-90] INFO  c.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+2024-10-11 15:52:26 [Thread-90] INFO  c.netflix.discovery.DiscoveryClient - Unregistering ...
+2024-10-11 15:52:26 [Thread-90] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_NOTIFICATION-SERVICE/HP:NOTIFICATION-SERVICE:8184 - deregister  status: 200
+2024-10-11 15:52:26 [Thread-90] INFO  c.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient
+2024-10-11 15:52:26 [restartedMain] INFO  c.e.n.NotificationserviceApplication - Starting NotificationserviceApplication using Java 17.0.11 with PID 833190 (/home/kacha/Project/notificationservice/target/classes started by kacha in /home/kacha/Project/notificationservice)
+2024-10-11 15:52:26 [restartedMain] INFO  c.e.n.NotificationserviceApplication - No active profile set, falling back to 1 default profile: "default"
+2024-10-11 15:52:27 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-11 15:52:27 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 2 ms. Found 1 JPA repository interface.
+2024-10-11 15:52:27 [restartedMain] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=24cdbe16-8077-37b2-b5e0-1c93bd7f8c79
+2024-10-11 15:52:27 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-10-11 15:52:27 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+2024-10-11 15:52:27 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8184 (http)
+2024-10-11 15:52:27 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-10-11 15:52:27 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-11 15:52:27 [restartedMain] INFO  o.a.c.c.C.[Tomcat-7].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-10-11 15:52:27 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 168 ms
+2024-10-11 15:52:27 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-11 15:52:27 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-10-11 15:52:27 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-11 15:52:27 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-19 - Starting...
+2024-10-11 15:52:27 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-19 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6f7d6dd1
+2024-10-11 15:52:27 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-19 - Start completed.
+2024-10-11 15:52:27 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JTA platform [org.hibernate.engine.transaction.jta.platform.internal.JBossAppServerJtaPlatform]
+2024-10-11 15:52:27 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-11 15:52:27 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-11 15:52:27 [restartedMain] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: d8d80cf6-640a-4d21-b411-cb467ab65410
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-10-11 15:52:27 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@379ca08d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@725b4b5e, org.springframework.security.web.context.SecurityContextHolderFilter@69f483c6, org.springframework.security.web.header.HeaderWriterFilter@2c88ec2b, org.springframework.security.web.csrf.CsrfFilter@6ce8d81d, org.springframework.security.web.authentication.logout.LogoutFilter@58a27542, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@22d832e5, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@62b2cb78, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@117700ea, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@699b4b99, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@43f686d5, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@93097c1, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@228356de, org.springframework.security.web.access.ExceptionTranslationFilter@71e77d6f, org.springframework.security.web.access.intercept.AuthorizationFilter@21bc97cf]
+2024-10-11 15:52:27 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-10-11 15:52:27 [restartedMain] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2024-10-11 15:52:27 [restartedMain] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-10-11 15:52:27 [restartedMain] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2024-10-11 15:52:27 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2024-10-11 15:52:27 [restartedMain] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2024-10-11 15:52:27 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2024-10-11 15:52:27 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2024-10-11 15:52:27 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2024-10-11 15:52:27 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2024-10-11 15:52:27 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2024-10-11 15:52:27 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+2024-10-11 15:52:27 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2024-10-11 15:52:27 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2024-10-11 15:52:27 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2024-10-11 15:52:27 [restartedMain] INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2024-10-11 15:52:27 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1728651147319 with initial instances count: 1
+2024-10-11 15:52:27 [restartedMain] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application NOTIFICATION-SERVICE with eureka with status UP
+2024-10-11 15:52:27 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1728651147319, current=UP, previous=STARTING]
+2024-10-11 15:52:27 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_NOTIFICATION-SERVICE/HP:NOTIFICATION-SERVICE:8184: registering service...
+2024-10-11 15:52:27 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8184 (http) with context path ''
+2024-10-11 15:52:27 [restartedMain] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8184
+2024-10-11 15:52:27 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_NOTIFICATION-SERVICE/HP:NOTIFICATION-SERVICE:8184 - registration status: 204
+2024-10-11 15:52:27 [restartedMain] INFO  c.e.n.NotificationserviceApplication - Started NotificationserviceApplication in 0.609 seconds (process running for 1410.393)
+2024-10-11 15:52:27 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-10-11 15:52:35 [SpringApplicationShutdownHook] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application NOTIFICATION-SERVICE with eureka with status DOWN
+2024-10-11 15:52:35 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1728651155532, current=DOWN, previous=UP]
+2024-10-11 15:52:35 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_NOTIFICATION-SERVICE/HP:NOTIFICATION-SERVICE:8184: registering service...
+2024-10-11 15:52:35 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_NOTIFICATION-SERVICE/HP:NOTIFICATION-SERVICE:8184 - registration status: 204
+2024-10-11 15:52:35 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-11 15:52:35 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-19 - Shutdown initiated...
+2024-10-11 15:52:35 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-19 - Shutdown completed.
+2024-10-11 15:52:35 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+2024-10-11 15:52:38 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - Unregistering ...
+2024-10-11 15:52:38 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_NOTIFICATION-SERVICE/HP:NOTIFICATION-SERVICE:8184 - deregister  status: 200
+2024-10-11 15:52:38 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient
