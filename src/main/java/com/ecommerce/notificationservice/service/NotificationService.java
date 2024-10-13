@@ -32,5 +32,5 @@ public interface NotificationService {
     /**
      * Delete notification
      */
-    public void deleteNotification(Long id);
+    public boolean deleteNotification(Long id);
 }
