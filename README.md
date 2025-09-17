@@ -18,9 +18,6 @@ A robust, **multi-channel Notification Service** built as part of a comprehensiv
 - [Technologies](#technologies)
 - [Quick Start](#quick-start)
 - [API Documentation](#api-documentation)
-- [Configuration](#configuration)
-- [Monitoring & Observability](#monitoring--observability)
-- [Docker Deployment](#docker-deployment)
 - [Development](#development)
 - [Contributing](#contributing)
 - [License](#license)
@@ -78,7 +75,7 @@ The Notification Service is a critical component of our e-commerce microservices
 - **Dead Letter Queues** for failed message handling
 - **Event Replay** for message recovery
 
-### 🎯 Smart Delivery
+### �� Smart Delivery
 - **Delivery Scheduling** with timezone support
 - **Rate Limiting** to prevent spam and ensure compliance
 - **Retry Mechanisms** with exponential backoff
@@ -133,7 +130,6 @@ The Notification Service is a critical component of our e-commerce microservices
 - **Docker & Docker Compose**
 - **MySQL 8.0+** (or use Docker)
 - **Apache Kafka** (or use Docker)
-- **Twilio Account** (for SMS notifications)
 
 ### 1. Clone the Repository
 
@@ -142,36 +138,7 @@ git clone https://github.com/habeneyasu/e-commerce.git
 cd e-commerce/notificationservice
 ```
 
-### 2. Environment Setup
-
-Create a `.env` file in the project root:
-
-```bash
-# Database Configuration
-SPRING_DATASOURCE_URL=jdbc:mysql://localhost:3309/notification_service_db
-SPRING_DATASOURCE_USERNAME=user
-SPRING_DATASOURCE_PASSWORD=your_secure_password
-
-# Kafka Configuration
-KAFKA_BOOTSTRAP_SERVERS=localhost:9092
-KAFKA_TOPIC_NOTIFICATION_EVENT=notification-event
-
-# Twilio Configuration
-TWILIO_ACCOUNT_SID=your_twilio_account_sid
-TWILIO_AUTH_TOKEN=your_twilio_auth_token
-TWILIO_PHONE_NUMBER=your_twilio_phone_number
-
-# Email Configuration
-SPRING_MAIL_HOST=smtp.gmail.com
-SPRING_MAIL_PORT=587
-SPRING_MAIL_USERNAME=your_email@gmail.com
-SPRING_MAIL_PASSWORD=your_app_password
-
-# Service Discovery
-EUREKA_CLIENT_SERVICE_URL_DEFAULTZONE=http://localhost:8761/eureka
-```
-
-### 3. Run with Docker Compose (Recommended)
+### 2. Run with Docker Compose (Recommended)
 
 ```bash
 # Start all services including dependencies
@@ -184,7 +151,7 @@ docker-compose ps
 docker-compose logs -f notification-service
 ```
 
-### 4. Run Locally
+### 3. Run Locally
 
 ```bash
 # Build the project
@@ -194,7 +161,7 @@ mvn clean install
 mvn spring-boot:run
 ```
 
-### 5. Verify Installation
+### 4. Verify Installation
 
 - **Service Health**: http://localhost:8184/api/v1/actuator/health
 - **API Documentation**: http://localhost:8184/api/v1/swagger-ui/index.html
@@ -276,41 +243,7 @@ curl -X POST http://localhost:8184/api/v1/notifications/sms \
   }'
 ```
 
-#### 3. Send Push Notification
-```bash
-curl -X POST http://localhost:8184/api/v1/notifications/push \
-  -H "Content-Type: application/json" \
-  -H "Authorization: Bearer YOUR_JWT_TOKEN" \
-  -d '{
-    "userId": 123,
-    "title": "Order Update",
-    "body": "Your order has been shipped",
-    "data": {
-      "orderId": "ORD-12345",
-      "status": "shipped"
-    }
-  }'
-```
-
-#### 4. Send WhatsApp Notification
-```bash
-curl -X POST http://localhost:8184/api/v1/notifications/whatsapp \
-  -H "Content-Type: application/json" \
-  -H "Authorization: Bearer YOUR_JWT_TOKEN" \
-  -d '{
-    "to": "+1234567890",
-    "message": "Hello! Your order ORD-12345 is ready for pickup.",
-    "templateId": "whatsapp-order"
-  }'
-```
-
-#### 5. Get Notification History
-```bash
-curl -X GET http://localhost:8184/api/v1/notifications/user/123 \
-  -H "Authorization: Bearer YOUR_JWT_TOKEN"
-```
-
-#### 6. GraphQL Query
+#### 3. GraphQL Query
 ```graphql
 query {
   notifications(userId: 123) {
@@ -324,164 +257,6 @@ query {
     deliveredAt
   }
 }
-```
-
-## ⚙️ Configuration
-
-### Application Properties
-
-The service uses Spring Boot's configuration system with profiles:
-
-- **`application.properties`** - Base configuration
-- **`application-container.properties`** - Container-specific settings
-- **`application-dev.properties`** - Development environment
-- **`application-prod.properties`** - Production environment
-
-### Key Configuration Options
-
-```properties
-# Server Configuration
-server.port=8184
-server.servlet.context-path=/api/v1
-spring.application.name=NOTIFICATION-SERVICE
-
-# Database Configuration
-spring.datasource.url=jdbc:mysql://localhost:3309/notification_service_db
-spring.datasource.username=user
-spring.datasource.password=${SPRING_DATASOURCE_PASSWORD}
-spring.jpa.hibernate.ddl-auto=validate
-
-# Kafka Configuration
-spring.kafka.bootstrap-servers=${KAFKA_BOOTSTRAP_SERVERS}
-spring.kafka.producer.key-serializer=org.apache.kafka.common.serialization.StringSerializer
-spring.kafka.producer.value-serializer=org.apache.kafka.common.serialization.StringSerializer
-
-# Twilio Configuration
-twilio.account-sid=${TWILIO_ACCOUNT_SID}
-twilio.auth-token=${TWILIO_AUTH_TOKEN}
-twilio.phone-number=${TWILIO_PHONE_NUMBER}
-
-# Email Configuration
-spring.mail.host=${SPRING_MAIL_HOST}
-spring.mail.port=${SPRING_MAIL_PORT}
-spring.mail.username=${SPRING_MAIL_USERNAME}
-spring.mail.password=${SPRING_MAIL_PASSWORD}
-spring.mail.properties.mail.smtp.auth=true
-spring.mail.properties.mail.smtp.starttls.enable=true
-
-# Service Discovery
-eureka.client.service-url.defaultZone=${EUREKA_CLIENT_SERVICE_URL_DEFAULTZONE}
-```
-
-## 📊 Monitoring & Observability
-
-### Spring Actuator Endpoints
-
-| Endpoint | Description |
-|----------|-------------|
-| `/actuator/health` | Service health status |
-| `/actuator/info` | Application information |
-| `/actuator/metrics` | Application metrics |
-
-### Business Metrics
-
-The service tracks various notification-related metrics:
-
-- **Notification Delivery Rate** - Successful deliveries percentage
-- **Channel Performance** - Delivery rates by channel (email, SMS, push)
-- **Template Usage** - Most used notification templates
-- **Error Rate** - Failed notification percentage
-- **Response Time** - Average notification processing time
-- **Queue Depth** - Pending notifications count
-
-### Channel-Specific Metrics
-
-- **Email Metrics** - Bounce rate, open rate, click rate
-- **SMS Metrics** - Delivery rate, cost per message
-- **Push Metrics** - Delivery rate, click-through rate
-- **WhatsApp Metrics** - Delivery rate, read receipts
-
-### Logging
-
-Structured JSON logging with different levels:
-
-```json
-{
-  "timestamp": "2024-01-15T10:30:00.000Z",
-  "level": "INFO",
-  "logger": "com.ecommerce.notificationservice.service.NotificationService",
-  "message": "Notification sent successfully",
-  "notificationId": "NOTIF-12345",
-  "userId": 67890,
-  "channel": "EMAIL",
-  "templateId": "order-confirmation",
-  "status": "DELIVERED"
-}
-```
-
-## 🐳 Docker Deployment
-
-### Dockerfile
-
-```dockerfile
-FROM openjdk:17-jdk-slim
-VOLUME /tmp
-COPY target/notification_app.jar app.jar
-EXPOSE 8184
-ENTRYPOINT ["java","-jar","/app.jar"]
-```
-
-### Docker Compose
-
-```yaml
-version: '3.8'
-services:
-  notification-service:
-    build: ./notificationservice
-    ports:
-      - "8184:8184"
-    environment:
-      - SPRING_DATASOURCE_URL=jdbc:mysql://notification-service-db:3306/notification_service_db
-      - SPRING_DATASOURCE_USERNAME=user
-      - SPRING_DATASOURCE_PASSWORD=test@123
-      - KAFKA_BOOTSTRAP_SERVERS=kafka:9092
-      - TWILIO_ACCOUNT_SID=${TWILIO_ACCOUNT_SID}
-      - TWILIO_AUTH_TOKEN=${TWILIO_AUTH_TOKEN}
-      - SPRING_MAIL_USERNAME=${SPRING_MAIL_USERNAME}
-      - SPRING_MAIL_PASSWORD=${SPRING_MAIL_PASSWORD}
-    depends_on:
-      - notification-service-db
-      - kafka
-    networks:
-      - microservice-net
-
-  notification-service-db:
-    image: mysql:8.0
-    environment:
-      - MYSQL_DATABASE=notification_service_db
-      - MYSQL_USER=user
-      - MYSQL_PASSWORD=test@123
-      - MYSQL_ROOT_PASSWORD=test@123
-    ports:
-      - "3309:3306"
-    networks:
-      - microservice-net
-```
-
-### Deployment Commands
-
-```bash
-# Build and start services
-docker-compose up --build
-
-# Run in background
-docker-compose up -d
-
-# View logs
-docker-compose logs -f notification-service
-
-# Stop services
-docker-compose down
 ```
 
 ## 🛠️ Development
