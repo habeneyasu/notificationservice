@@ -1,6 +1,6 @@
-package com.ecommerce.paymentservice.repository;
+package com.ecommerce.notificationservice.repository;
 
-import com.ecommerce.paymentservice.model.Notification;
+import com.ecommerce.notificationservice.model.Notification;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

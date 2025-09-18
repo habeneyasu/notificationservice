@@ -1,4 +1,4 @@
-package com.ecommerce.paymentservice.service;
+package com.ecommerce.notificationservice.service;
 
 import com.twilio.rest.api.v2010.account.Message;
 import com.twilio.type.PhoneNumber;

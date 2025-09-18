@@ -1,12 +1,15 @@
-package com.ecommerce.paymentservice.service;
+package com.ecommerce.notificationservice.service;
 
-import com.ecommerce.paymentservice.model.Notification;
-import com.ecommerce.paymentservice.modeldto.NotificationDTO;
-import com.ecommerce.paymentservice.repository.NotificationRepository;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.RequestParam;
+
+import com.ecommerce.notificationservice.model.Notification;
+import com.ecommerce.notificationservice.modeldto.NotificationDTO;
+import com.ecommerce.notificationservice.repository.NotificationRepository;
+
 import java.util.List;
 
 @Service

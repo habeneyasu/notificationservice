@@ -1,4 +1,4 @@
-package com.ecommerce.paymentservice.config;
+package com.ecommerce.notificationservice.config;
 
 public enum PaymentMethodEnum {
         CREDIT_CARD,

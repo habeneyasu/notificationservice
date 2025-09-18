@@ -1,7 +1,7 @@
-package com.ecommerce.paymentservice.service;
+    package com.ecommerce.notificationservice.service;
 
-import com.ecommerce.paymentservice.model.Notification;
-import com.ecommerce.paymentservice.modeldto.NotificationDTO;
+import com.ecommerce.notificationservice.model.Notification;
+import com.ecommerce.notificationservice.modeldto.NotificationDTO;
 
 import java.util.List;
 

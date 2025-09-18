@@ -1,10 +1,13 @@
-package com.ecommerce.paymentservice.integration;
+package com.ecommerce.notificationservice.integration;
 
-import com.ecommerce.paymentservice.modeldto.NotificationDTO;
-import com.ecommerce.paymentservice.modeldto.Login;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.reactive.function.client.WebClient;
+
+import com.ecommerce.notificationservice.modeldto.Login;
+import com.ecommerce.notificationservice.modeldto.NotificationDTO;
+
 import reactor.core.publisher.Mono;
 
 @Service

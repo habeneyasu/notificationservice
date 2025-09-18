@@ -1,7 +1,9 @@
-package com.ecommerce.paymentservice.integration;
+package com.ecommerce.notificationservice.integration;
 
-import com.ecommerce.paymentservice.modeldto.NotificationDTO;
-import com.ecommerce.paymentservice.modeldto.Login;
+
+import com.ecommerce.notificationservice.modeldto.Login;
+import com.ecommerce.notificationservice.modeldto.NotificationDTO;
+
 import reactor.core.publisher.Mono;
 
 public interface NotificationServiceIntegration {

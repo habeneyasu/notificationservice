@@ -1,4 +1,4 @@
-package com.ecommerce.paymentservice.config;
+package com.ecommerce.notificationservice.config;
 
 import com.twilio.Twilio;
 import jakarta.annotation.PostConstruct;

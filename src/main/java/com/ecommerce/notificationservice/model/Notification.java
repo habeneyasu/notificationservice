@@ -1,6 +1,6 @@
-package com.ecommerce.paymentservice.model;
+package com.ecommerce.notificationservice.model;
 
-import com.ecommerce.paymentservice.config.PaymentMethodEnum;
+import com.ecommerce.notificationservice.config.PaymentMethodEnum;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;

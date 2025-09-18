@@ -1,4 +1,4 @@
-package com.ecommerce.paymentservice.modeldto;
+package com.ecommerce.notificationservice.modeldto;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
